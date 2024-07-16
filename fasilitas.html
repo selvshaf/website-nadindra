@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>KB TK Islam Nadindra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="image/nadindralogo.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--loader-->
+    <div class="bg-loader">
+        <div class="loader">
+
+        </div>
+    </div>
+
+        <!--header-->
+        <header>
+            <div class="container">
+                <img src="image/nadindralogo.png" alt="header" width="60" height="60">
+                <h1><a href="index.html">KB TK ISLAM NADINDRA</a></h1>
+                <ul>
+                    <li><a href="index.html">BERANDA</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="kegiatan.html">KEGIATAN</a></li>
+                    <li class="active"><a href="fasilitas.html">FASILITAS</a></li>
+                    <li><a href="ppdb.html">INFO PPDB</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!--label-->
+        <section class="label">
+            <div class="container">
+                <p>Beranda / Fasilitas</p>
+            </div>
+        </section>
+
+        <section id="fasilitas">
+            <div class="card1a">
+                <p class="fasilitas"></p>
+                <h1 class="card-title1a">Fasilitas Kami</h1>
+                <br>
+                <br>
+                <div class="container1"> 
+                    <p class="container1"></p>
+                    <div class="card13 fade">
+                        <img src="image/lobbyy.jpg" alt="tu" width="800" height="500">
+                        <div class="card-body13">
+                            <h2 class="card-title13">Tata Usaha</h2>
+                        </div>
+                    </div>
+                
+                    <div class="card13 fade">
+                        <img src="image/main2.jpg" alt="tu" width="800" height="500">
+                        <div class="card-body13">
+                            <h2 class="card-title13">Tempat Bermain Luar</h2>
+                        </div>
+                    </div>
+                
+                    <div class="card13 fade">
+                        <img src="image/audio.jpg" alt="tu" width="800" height="500">
+                        <div class="card-body13">
+                            <h2 class="card-title13">Ruang Audio Visual</h2>
+                        </div>
+                    </div>
+                
+                    <div class="card13 fade">
+                        <img src="image/kelas.jpg" alt="tu" width="800" height="500">
+                        <div class="card-body13">
+                            <h2 class="card-title13">Ruang Kelas</h2>
+                        </div>
+                    </div>
+                
+                    <div class="card13 fade">
+                        <img src="image/main.jpg" alt="tu" width="800" height="500">
+                        <div class="card-body13">
+                            <h2 class="card-title13">Tempat Bermain Dalam</h2>
+                        </div>
+                    </div>
+                
+                    <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="nextSlide(1)">&#10095;</a>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlide(slideIndex);
+                
+                    function nextSlide(n){
+                        slideIndex += n;
+                        showSlide(slideIndex);
+                    }
+                
+                    function showSlide(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("card13");
+                        
+                        if (n > slides.length) {
+                            slideIndex = 1;
+                        }
+                        
+                        if (n < 1) {
+                            slideIndex = slides.length;
+                        }
+                
+                        for (i = 0; i < slides.length; i++){
+                            slides[i].style.display = "none";
+                        }
+                
+                        slides[slideIndex - 1].style.display = "block";
+                    }
+                </script>
+            </section>
+
+            <!--fasilitas lain-->
+        <section class="fasilitasLain">
+            <div class="container">
+                <div class="box">
+                    <div class="col-4">
+                        <div class="icon"><i class="fa-solid fa-snowflake"></i></div>
+                        <h4>KELAS FULL AC</h4>
+                    </div>
+                    <div class="col-4">
+                        <div class="icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+                        <h4>KELAS BERSIH</h4>
+                    </div>
+                    <div class="col-4">
+                        <div class="icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <h4>GURU BERPENGALAMAN</h4>
+                    </div>
+                    <div class="col-4">
+                        <div class="icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                        <h4>PENYEMPROTAN DISINFEKTAN SECARA RUTIN DI LINGKUNGAN SEKOLAH</h4>
+                    </div>
+                    <div class="col-4">
+                        <div class="icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                        <h4>TERDAPAT MAINAN DI SETIAP KELAS</h4>
+                    </div>
+                    <div class="col-4">
+                        <div class="icon"><i class="fa-solid fa-store"></i></div>
+                        <h4>KOPERASI SEKOLAH</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcon">
+                    <a href="https://wa.me/qr/DKN6DUCDZNMBA1"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/nurjanahimas_418?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/tksdislamnadindra/?locale=id_ID"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="index.html">Home</li>
+                        <li><a href="profile.html">About</li>
+                        <li><a href="">Contact Us</li>
+                    </ul>
+                </div>
+                </div><div class="footerBottom">
+                    <p>Copyright &copy;2024; Designed by <span class="designer">Selvy Eliana Shafa</span></p>
+                </div>
+        </footer>
+        
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".bg-loader").hide();
+            })
+        </script>
+</body>
+</html>
